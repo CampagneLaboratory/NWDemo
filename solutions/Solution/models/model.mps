@@ -127,7 +127,7 @@
   <node concept="2$rMIF" id="VC5j7AxFCM">
     <property role="TrG5h" value="FastqKallistoCounts" />
     <node concept="2$rEH5" id="6vUUoZG0cco" role="2$rEHq">
-      <ref role="2$rEH4" node="6vUUoZG0cbK" resolve="Download_1M_Reads" />
+      <ref role="2$rEH4" node="6vUUoZG0cbK" resolve="Download_5_Reads" />
       <node concept="1uLkD0" id="6vUUoZG0eDz" role="1uLvPA">
         <property role="TrG5h" value="reads" />
       </node>
@@ -177,7 +177,7 @@
     </node>
   </node>
   <node concept="2ulcR8" id="6vUUoZG0cbK">
-    <property role="TrG5h" value="Download_1M_Reads" />
+    <property role="TrG5h" value="Download_5_Reads" />
     <node concept="2lYRya" id="6vUUoZG0eu2" role="2ulM79">
       <node concept="knwa4" id="6vUUoZG0eua" role="2ybFLk">
         <node concept="2zSw2O" id="6vUUoZG0euc" role="2zSOd7">
