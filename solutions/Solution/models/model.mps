@@ -21,11 +21,25 @@
     </language>
     <language id="f9b7dda6-7ab5-4936-ad1b-2d45c57833dc" name="org.campagnelab.workflow.configuration">
       <concept id="1572763280063619218" name="org.campagnelab.workflow.configuration.structure.WithDocker" flags="ng" index="3qaZdc" />
+      <concept id="6643674794994257454" name="org.campagnelab.workflow.configuration.structure.Hostname" flags="ng" index="3yU_OC" />
+      <concept id="6643674794994257455" name="org.campagnelab.workflow.configuration.structure.JobArea" flags="ng" index="3yU_OD" />
+      <concept id="6643674794994257459" name="org.campagnelab.workflow.configuration.structure.RemoteSubmissionConfig" flags="ng" index="3yU_OP">
+        <child id="6643674794994257462" name="username" index="3yU_OK" />
+        <child id="6643674794994257463" name="jobArea" index="3yU_OL" />
+        <child id="6643674794994257461" name="hostname" index="3yU_ON" />
+        <child id="6643674794994257464" name="keyfile" index="3yU_OY" />
+      </concept>
+      <concept id="6643674794994257456" name="org.campagnelab.workflow.configuration.structure.KeyFile" flags="ng" index="3yU_OQ" />
+      <concept id="6643674794994257469" name="org.campagnelab.workflow.configuration.structure.Username" flags="ng" index="3yU_OV" />
+      <concept id="6643674794994257466" name="org.campagnelab.workflow.configuration.structure.SubmissionOption" flags="ng" index="3yU_OW">
+        <property id="6643674794994257467" name="value" index="3yU_OX" />
+      </concept>
       <concept id="6643674795001677795" name="org.campagnelab.workflow.configuration.structure.WorkflowConfig" flags="ng" index="3zupj_">
         <child id="1572763280063618524" name="containerOptions" index="3qaWS2" />
+        <child id="6643674795001677798" name="remoteSubmission" index="3zupjw" />
         <child id="6643674795001677796" name="executor" index="3zupjy" />
       </concept>
-      <concept id="6643674795001609832" name="org.campagnelab.workflow.configuration.structure.Local" flags="ng" index="3zuAPI" />
+      <concept id="6643674795001609834" name="org.campagnelab.workflow.configuration.structure.SGE" flags="ng" index="3zuAPG" />
     </language>
     <language id="25281c03-4a7c-4b57-9221-24a10fc36ef5" name="org.campagnelab.docker">
       <concept id="8987412447079095297" name="org.campagnelab.docker.structure.Config" flags="ng" index="2EEQw1">
@@ -92,8 +106,23 @@
   </registry>
   <node concept="3zupj_" id="VC5j7AxFCN">
     <property role="TrG5h" value="workflow.config" />
-    <node concept="3zuAPI" id="VC5j7AxFCO" role="3zupjy" />
+    <node concept="3zuAPG" id="635ahSvensz" role="3zupjy" />
     <node concept="3qaZdc" id="6vUUoZG0eCw" role="3qaWS2" />
+    <node concept="3yU_OP" id="635ahSvensA" role="3zupjw">
+      <property role="TrG5h" value="remote.config" />
+      <node concept="3yU_OV" id="635ahSvensB" role="3yU_OK">
+        <property role="3yU_OX" value="ubuntu" />
+      </node>
+      <node concept="3yU_OD" id="635ahSvensC" role="3yU_OL">
+        <property role="3yU_OX" value="/home/ubuntu" />
+      </node>
+      <node concept="3yU_OQ" id="635ahSvensD" role="3yU_OY">
+        <property role="3yU_OX" value="${user.home}/.ssh/id_rsa" />
+      </node>
+      <node concept="3yU_OC" id="635ahSvensE" role="3yU_ON">
+        <property role="3yU_OX" value="8.34.213.172" />
+      </node>
+    </node>
   </node>
   <node concept="2$rMIF" id="VC5j7AxFCM">
     <property role="TrG5h" value="FastqKallistoCounts" />
