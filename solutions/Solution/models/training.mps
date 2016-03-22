@@ -342,10 +342,6 @@
       </node>
     </node>
   </node>
-  <node concept="2EEQw1" id="7ejpSqHd7NO">
-    <property role="2EEQw2" value="/usr/local/bin/docker" />
-    <property role="2E$TAj" value="--tlsverify --tlscacert=&quot;/Users/mas2182/.docker/machine/machines/dev/ca.pem&quot; --tlscert=&quot;/Users/mas2182/.docker/machine/machines/dev/cert.pem&quot; --tlskey=&quot;/Users/mas2182/.docker/machine/machines/dev/key.pem&quot; -H=tcp://192.168.99.101:2376" />
-  </node>
   <node concept="2EWdU8" id="4xTPTl969LW">
     <property role="TrG5h" value="Fastq files" />
     <node concept="2EWdhe" id="7ejpSqGJwYo" role="2EWcS1">
@@ -399,7 +395,7 @@
         </node>
       </node>
       <node concept="1uYdA0" id="3a_Ie33OnkF" role="1uLvPH">
-        <ref role="1uK_4X" node="59BvSKQO37s" />
+        <ref role="1uK_4X" node="59BvSKQO37s" resolve="IDsToDownload" />
       </node>
     </node>
     <node concept="2$rEH5" id="iewVIi_TdJ" role="2$rEHq">
@@ -408,13 +404,13 @@
         <property role="TrG5h" value="zip" />
       </node>
       <node concept="1uYdA0" id="iewVIi_Tfi" role="1uLvPH">
-        <ref role="1uK_4X" node="59BvSKQZ7KI" />
+        <ref role="1uK_4X" node="59BvSKQZ7KI" resolve="A" />
       </node>
     </node>
     <node concept="2$rEH5" id="5frYURexkMf" role="2$rEHq">
       <ref role="2$rEH4" node="59BvSKQHAFs" resolve="Sample_KallistoCountsWithTuples" />
       <node concept="1uYdA0" id="5frYURexkRa" role="1uLvPH">
-        <ref role="1uK_4X" node="59BvSKQZ85H" />
+        <ref role="1uK_4X" node="59BvSKQZ85H" resolve="B" />
       </node>
       <node concept="1uLkD0" id="5frYURexkRb" role="1uLvPA">
         <property role="TrG5h" value="result" />
@@ -427,7 +423,7 @@
         <node concept="1yaYav" id="59BvSKQHFDp" role="1ylr64" />
       </node>
       <node concept="1uYdA0" id="59BvSKQHDKa" role="1uLvPH">
-        <ref role="1uK_4X" node="59BvSKQOg5v" />
+        <ref role="1uK_4X" node="59BvSKQOg5v" resolve="IDsToCombine" />
         <node concept="1yaYav" id="59BvSKQHFIw" role="1ylr64" />
       </node>
       <node concept="1uLkD0" id="59BvSKQHDKb" role="1uLvPA">
@@ -1903,6 +1899,11 @@
         <property role="TrG5h" value="out" />
       </node>
     </node>
+  </node>
+  <node concept="2EEQw1" id="635ahSvenpD">
+    <property role="TrG5h" value="docker.config" />
+    <property role="2EEQw2" value="/usr/local/bin/docker" />
+    <property role="2E$TAj" value="--tlsverify --tlscacert=&quot;/Users/manuelesimi/.docker/machine/certs/ca.pem&quot; --tlscert=&quot;/Users/manuelesimi/.docker/machine/certs/cert.pem&quot; --tlskey=&quot;/Users/manuelesimi/.docker/machine/certs/key.pem&quot; -H=tcp://192.168.99.100:2376" />
   </node>
 </model>
 

@@ -191,9 +191,10 @@
       <property role="3zaeVo" value="false" />
     </node>
   </node>
-  <node concept="2EEQw1" id="6vUUoZG0eDj">
+  <node concept="2EEQw1" id="635ahSvenpC">
+    <property role="TrG5h" value="docker.config" />
     <property role="2EEQw2" value="/usr/local/bin/docker" />
-    <property role="2E$TAj" value="--tlsverify --tlscacert=&quot;/Users/fac2003/.docker/machine/machines/dev/ca.pem&quot; --tlscert=&quot;/Users/fac2003/.docker/machine/machines/dev/cert.pem&quot; --tlskey=&quot;/Users/fac2003/.docker/machine/machines/dev/key.pem&quot; -H=tcp://192.168.99.100:2376" />
+    <property role="2E$TAj" value="--tlsverify --tlscacert=&quot;/Users/manuelesimi/.docker/machine/certs/ca.pem&quot; --tlscert=&quot;/Users/manuelesimi/.docker/machine/certs/cert.pem&quot; --tlskey=&quot;/Users/manuelesimi/.docker/machine/certs/key.pem&quot; -H=tcp://192.168.99.100:2376" />
   </node>
 </model>
 
