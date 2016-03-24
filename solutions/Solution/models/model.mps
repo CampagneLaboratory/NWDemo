@@ -24,10 +24,12 @@
         <property id="239101957524078947" name="value" index="2C0Vil" />
       </concept>
       <concept id="2116956346009973572" name="org.campagnelab.workflow.configuration.structure.ScratchOption" flags="ng" index="2Xzwfg" />
+      <concept id="2116956346010335290" name="org.campagnelab.workflow.configuration.structure.WorkArea" flags="ng" index="2X_8yI" />
       <concept id="1572763280063619218" name="org.campagnelab.workflow.configuration.structure.WithDocker" flags="ng" index="3qaZdc" />
       <concept id="6643674794994257454" name="org.campagnelab.workflow.configuration.structure.Hostname" flags="ng" index="3yU_OC" />
       <concept id="6643674794994257455" name="org.campagnelab.workflow.configuration.structure.JobArea" flags="ng" index="3yU_OD" />
       <concept id="6643674794994257459" name="org.campagnelab.workflow.configuration.structure.RemoteSubmissionConfig" flags="ng" index="3yU_OP">
+        <child id="2116956346010335121" name="workArea" index="2X_8s5" />
         <child id="6643674794994257462" name="username" index="3yU_OK" />
         <child id="6643674794994257463" name="jobArea" index="3yU_OL" />
         <child id="6643674794994257461" name="hostname" index="3yU_ON" />
@@ -140,6 +142,9 @@
       </node>
       <node concept="3yU_OC" id="635ahSvensE" role="3yU_ON">
         <property role="3yU_OX" value="104.154.116.194" />
+      </node>
+      <node concept="2X_8yI" id="1PwW9iwXgKB" role="2X_8s5">
+        <property role="3yU_OX" value="/home/ubuntu/work" />
       </node>
     </node>
   </node>

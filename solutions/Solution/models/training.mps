@@ -200,10 +200,16 @@
       </concept>
     </language>
     <language id="f9b7dda6-7ab5-4936-ad1b-2d45c57833dc" name="org.campagnelab.workflow.configuration">
+      <concept id="239101957522210043" name="org.campagnelab.workflow.configuration.structure.StringOption" flags="ng" index="2CpO$d">
+        <property id="239101957524078947" name="value" index="2C0Vil" />
+      </concept>
+      <concept id="2116956346009973572" name="org.campagnelab.workflow.configuration.structure.ScratchOption" flags="ng" index="2Xzwfg" />
+      <concept id="2116956346010335290" name="org.campagnelab.workflow.configuration.structure.WorkArea" flags="ng" index="2X_8yI" />
       <concept id="1572763280063619218" name="org.campagnelab.workflow.configuration.structure.WithDocker" flags="ng" index="3qaZdc" />
       <concept id="6643674794994257454" name="org.campagnelab.workflow.configuration.structure.Hostname" flags="ng" index="3yU_OC" />
       <concept id="6643674794994257455" name="org.campagnelab.workflow.configuration.structure.JobArea" flags="ng" index="3yU_OD" />
       <concept id="6643674794994257459" name="org.campagnelab.workflow.configuration.structure.RemoteSubmissionConfig" flags="ng" index="3yU_OP">
+        <child id="2116956346010335121" name="workArea" index="2X_8s5" />
         <child id="6643674794994257462" name="username" index="3yU_OK" />
         <child id="6643674794994257463" name="jobArea" index="3yU_OL" />
         <child id="6643674794994257461" name="hostname" index="3yU_ON" />
@@ -218,6 +224,7 @@
         <child id="1572763280063618524" name="containerOptions" index="3qaWS2" />
         <child id="6643674795001677798" name="remoteSubmission" index="3zupjw" />
         <child id="6643674795001677796" name="executor" index="3zupjy" />
+        <child id="6643674795001677797" name="processOptions" index="3zupjz" />
       </concept>
       <concept id="6643674795001609834" name="org.campagnelab.workflow.configuration.structure.SGE" flags="ng" index="3zuAPG" />
     </language>
@@ -765,7 +772,7 @@
     <node concept="3Y$Zt1" id="3a_Ie33Onk7" role="2ulM7a">
       <node concept="19SGf9" id="3a_Ie33Onk9" role="3Y$PkS">
         <node concept="19SUe$" id="3a_Ie33Onka" role="19SJt6">
-          <property role="19SUeA" value="&#10;fastq-dump -X 1000000 --split-files " />
+          <property role="19SUeA" value="&#10;fastq-dump -X 5 --split-files " />
         </node>
         <node concept="3YE7tV" id="3a_Ie33Onkg" role="19SJt6">
           <ref role="3YE7sm" node="3a_Ie33OniZ" resolve="id" />
@@ -1929,6 +1936,9 @@
   </node>
   <node concept="3zupj_" id="635ahSvenO6">
     <property role="TrG5h" value="workflow.config" />
+    <node concept="2Xzwfg" id="1PwW9iwWcx6" role="3zupjz">
+      <property role="2C0Vil" value="true" />
+    </node>
     <node concept="3zuAPG" id="635ahSvenOa" role="3zupjy" />
     <node concept="3qaZdc" id="635ahSvenO8" role="3qaWS2" />
     <node concept="3yU_OP" id="635ahSvenOd" role="3zupjw">
@@ -1937,13 +1947,16 @@
         <property role="3yU_OX" value="ubuntu" />
       </node>
       <node concept="3yU_OD" id="635ahSvenOf" role="3yU_OL">
-        <property role="3yU_OX" value="/home/ubuntu" />
+        <property role="3yU_OX" value="/home/ubuntu/workflows" />
       </node>
       <node concept="3yU_OQ" id="635ahSvenOg" role="3yU_OY">
         <property role="3yU_OX" value="${user.home}/.ssh/id_rsa" />
       </node>
       <node concept="3yU_OC" id="635ahSvenOh" role="3yU_ON">
-        <property role="3yU_OX" value="8.34.213.172" />
+        <property role="3yU_OX" value="104.154.116.194" />
+      </node>
+      <node concept="2X_8yI" id="1PwW9iwXm_I" role="2X_8s5">
+        <property role="3yU_OX" value="/home/ubuntu/work" />
       </node>
     </node>
   </node>
