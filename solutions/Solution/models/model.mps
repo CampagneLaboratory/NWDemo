@@ -133,7 +133,7 @@
         <property role="3yU_OX" value="ubuntu" />
       </node>
       <node concept="3yU_OD" id="635ahSvensC" role="3yU_OL">
-        <property role="3yU_OX" value="/home/ubuntu/workflows-2" />
+        <property role="3yU_OX" value="/home/ubuntu/workflows" />
       </node>
       <node concept="3yU_OQ" id="635ahSvensD" role="3yU_OY">
         <property role="3yU_OX" value="${user.home}/.ssh/id_rsa" />
@@ -242,7 +242,7 @@
   <node concept="2EEQw1" id="635ahSvenpC">
     <property role="TrG5h" value="docker.config" />
     <property role="2EEQw2" value="/usr/local/bin/docker" />
-    <property role="2E$TAj" value="--tlsverify --tlscacert=&quot;/Users/mas2182/.docker/machine/machines/dev/ca.pem&quot; --tlscert=&quot;/Users/mas2182/.docker/machine/machines/dev/cert.pem&quot; --tlskey=&quot;/Users/mas2182/.docker/machine/machines/dev/key.pem&quot; -H=tcp://192.168.99.101:2376" />
+    <property role="2E$TAj" value="" />
   </node>
 </model>
 
