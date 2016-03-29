@@ -204,12 +204,10 @@
         <property id="239101957524078947" name="value" index="2C0Vil" />
       </concept>
       <concept id="2116956346009973572" name="org.campagnelab.workflow.configuration.structure.ScratchOption" flags="ng" index="2Xzwfg" />
-      <concept id="2116956346010335290" name="org.campagnelab.workflow.configuration.structure.WorkArea" flags="ng" index="2X_8yI" />
       <concept id="1572763280063619218" name="org.campagnelab.workflow.configuration.structure.WithDocker" flags="ng" index="3qaZdc" />
       <concept id="6643674794994257454" name="org.campagnelab.workflow.configuration.structure.Hostname" flags="ng" index="3yU_OC" />
       <concept id="6643674794994257455" name="org.campagnelab.workflow.configuration.structure.JobArea" flags="ng" index="3yU_OD" />
       <concept id="6643674794994257459" name="org.campagnelab.workflow.configuration.structure.RemoteSubmissionConfig" flags="ng" index="3yU_OP">
-        <child id="2116956346010335121" name="workArea" index="2X_8s5" />
         <child id="6643674794994257462" name="username" index="3yU_OK" />
         <child id="6643674794994257463" name="jobArea" index="3yU_OL" />
         <child id="6643674794994257461" name="hostname" index="3yU_ON" />
@@ -772,7 +770,7 @@
     <node concept="3Y$Zt1" id="3a_Ie33Onk7" role="2ulM7a">
       <node concept="19SGf9" id="3a_Ie33Onk9" role="3Y$PkS">
         <node concept="19SUe$" id="3a_Ie33Onka" role="19SJt6">
-          <property role="19SUeA" value="&#10;fastq-dump -X 5 --split-files " />
+          <property role="19SUeA" value="&#10;fastq-dump -X 100 --split-files " />
         </node>
         <node concept="3YE7tV" id="3a_Ie33Onkg" role="19SJt6">
           <ref role="3YE7sm" node="3a_Ie33OniZ" resolve="id" />
@@ -1932,7 +1930,7 @@
   <node concept="2EEQw1" id="635ahSvenpD">
     <property role="TrG5h" value="docker.config" />
     <property role="2EEQw2" value="/usr/local/bin/docker" />
-    <property role="2E$TAj" value="--tlsverify --tlscacert=&quot;/Users/manuelesimi/.docker/machine/certs/ca.pem&quot; --tlscert=&quot;/Users/manuelesimi/.docker/machine/certs/cert.pem&quot; --tlskey=&quot;/Users/manuelesimi/.docker/machine/certs/key.pem&quot; -H=tcp://192.168.99.100:2376" />
+    <property role="2E$TAj" value="--tlsverify --tlscacert=&quot;/Users/mas2182/.docker/machine/machines/dev/ca.pem&quot; --tlscert=&quot;/Users/mas2182/.docker/machine/machines/dev/cert.pem&quot; --tlskey=&quot;/Users/mas2182/.docker/machine/machines/dev/key.pem&quot; -H=tcp://192.168.99.101:2376" />
   </node>
   <node concept="3zupj_" id="635ahSvenO6">
     <property role="TrG5h" value="workflow.config" />
@@ -1947,16 +1945,13 @@
         <property role="3yU_OX" value="ubuntu" />
       </node>
       <node concept="3yU_OD" id="635ahSvenOf" role="3yU_OL">
-        <property role="3yU_OX" value="/home/ubuntu/workflows" />
+        <property role="3yU_OX" value="/hoe/ubuntu/workflows-2" />
       </node>
       <node concept="3yU_OQ" id="635ahSvenOg" role="3yU_OY">
         <property role="3yU_OX" value="${user.home}/.ssh/id_rsa" />
       </node>
       <node concept="3yU_OC" id="635ahSvenOh" role="3yU_ON">
-        <property role="3yU_OX" value="104.154.116.194" />
-      </node>
-      <node concept="2X_8yI" id="1PwW9iwXm_I" role="2X_8s5">
-        <property role="3yU_OX" value="/home/ubuntu/work" />
+        <property role="3yU_OX" value="104.197.47.29" />
       </node>
     </node>
   </node>
