@@ -1,25 +1,3 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<dependencies version="2" modelHash="-4bvyvbdnzzdugfuuvpz8qw06zgvkeh2">
-  <dep model="r:09f9fcf0-6700-4a26-8def-85e6b3017656(org.campagnelab.workflow.configuration.generator.template.main@generator)" hash="5nit3udab3nbqk1xr5ku5birb27xwvr" />
-  <dep model="r:b4d7d620-6723-4aa2-856b-118497e84e9e(jetbrains.mps.baseLanguage.generator.java.strings@generator)" hash="-5xb7jypw7d0bhouyx3xmbfw2tz5ihja" />
-  <dep model="r:cb87f197-eced-45b8-a1de-862778a14545(org.campagnelab.workflow.generator.template.main@generator)" hash="dbqxz1nkbt1yr4llq8kb07ez6q44rjg" />
-  <dep model="r:f04c1476-2f91-4f59-be13-c8e009abebee(jetbrains.mps.baseLanguageInternal.generator.template.main@generator)" hash="exf8ta60n8p6ynrjiy6o6g4awd1t7t4" />
-  <common hash="-8unawcyh520p1wk39hijgvm0zpko7o7" dependsOnNodes="true">
-    <dep model="r:b4d7d620-6723-4aa2-856b-118497e84e9e(jetbrains.mps.baseLanguage.generator.java.strings@generator)" />
-  </common>
-  <source id="1074131815193033267" name="workflow.config" hash="2cbe8cpt41nq2wweq88jpkl954um2w3" dependsOnNodes="true">
-    <dep model="r:09f9fcf0-6700-4a26-8def-85e6b3017656(org.campagnelab.workflow.configuration.generator.template.main@generator)" />
-    <file name="nextflow.config" />
-    <file name="runLocal.xml" />
-  </source>
-  <source id="1074131815193033266" name="FastqKallistoCounts" hash="-bbqmv4fzkdqtw448m3p44iwrg6g7zxb">
-    <dep root="7492557734433309424" />
-    <dep model="r:cb87f197-eced-45b8-a1de-862778a14545(org.campagnelab.workflow.generator.template.main@generator)" />
-    <file name="FastqKallistoCounts.nf" />
-  </source>
-  <source id="7492557734433309424" name="Download_1M_Reads" hash="-8m4dzo1xbai3fljaa3nj6ky9601j92x">
-    <dep model="r:f04c1476-2f91-4f59-be13-c8e009abebee(jetbrains.mps.baseLanguageInternal.generator.template.main@generator)" />
-  </source>
-  <source id="7492557734433319507" hash="a32n6e9lt2imr4n5flezdv4usbruzr1" />
-</dependencies>
+<dependencies version="2" modelHash="a9swxiet5u0s3hij0sldskiqs6l79hx" />
 

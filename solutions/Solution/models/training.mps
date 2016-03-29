@@ -218,6 +218,9 @@
       <concept id="6643674794994257466" name="org.campagnelab.workflow.configuration.structure.SubmissionOption" flags="ng" index="3yU_OW">
         <property id="6643674794994257467" name="value" index="3yU_OX" />
       </concept>
+      <concept id="6643674794999877909" name="org.campagnelab.workflow.configuration.structure.Queue" flags="ng" index="3z708j">
+        <child id="6643674794999877910" name="queueElements" index="3z708g" />
+      </concept>
       <concept id="6643674795001677795" name="org.campagnelab.workflow.configuration.structure.WorkflowConfig" flags="ng" index="3zupj_">
         <child id="1572763280063618524" name="containerOptions" index="3qaWS2" />
         <child id="6643674795001677798" name="remoteSubmission" index="3zupjw" />
@@ -225,6 +228,9 @@
         <child id="6643674795001677797" name="processOptions" index="3zupjz" />
       </concept>
       <concept id="6643674795001609834" name="org.campagnelab.workflow.configuration.structure.SGE" flags="ng" index="3zuAPG" />
+      <concept id="6643674795006467852" name="org.campagnelab.workflow.configuration.structure.QueueElement" flags="ng" index="3zC8Ka">
+        <property id="6643674795006468239" name="queue" index="3zCbe9" />
+      </concept>
     </language>
     <language id="25281c03-4a7c-4b57-9221-24a10fc36ef5" name="org.campagnelab.docker">
       <concept id="8987412447079095297" name="org.campagnelab.docker.structure.Config" flags="ng" index="2EEQw1">
@@ -1930,12 +1936,17 @@
   <node concept="2EEQw1" id="635ahSvenpD">
     <property role="TrG5h" value="docker.config" />
     <property role="2EEQw2" value="/usr/local/bin/docker" />
-    <property role="2E$TAj" value="--tlsverify --tlscacert=&quot;/Users/mas2182/.docker/machine/machines/dev/ca.pem&quot; --tlscert=&quot;/Users/mas2182/.docker/machine/machines/dev/cert.pem&quot; --tlskey=&quot;/Users/mas2182/.docker/machine/machines/dev/key.pem&quot; -H=tcp://192.168.99.101:2376" />
+    <property role="2E$TAj" value="" />
   </node>
   <node concept="3zupj_" id="635ahSvenO6">
     <property role="TrG5h" value="workflow.config" />
     <node concept="2Xzwfg" id="1PwW9iwWcx6" role="3zupjz">
       <property role="2C0Vil" value="true" />
+    </node>
+    <node concept="3z708j" id="2qF0d015CfH" role="3zupjz">
+      <node concept="3zC8Ka" id="2qF0d015CfJ" role="3z708g">
+        <property role="3zCbe9" value="all.q" />
+      </node>
     </node>
     <node concept="3zuAPG" id="635ahSvenOa" role="3zupjy" />
     <node concept="3qaZdc" id="635ahSvenO8" role="3qaWS2" />
@@ -1945,7 +1956,7 @@
         <property role="3yU_OX" value="ubuntu" />
       </node>
       <node concept="3yU_OD" id="635ahSvenOf" role="3yU_OL">
-        <property role="3yU_OX" value="/hoe/ubuntu/workflows-2" />
+        <property role="3yU_OX" value="/home/ubuntu/workflows" />
       </node>
       <node concept="3yU_OQ" id="635ahSvenOg" role="3yU_OY">
         <property role="3yU_OX" value="${user.home}/.ssh/id_rsa" />

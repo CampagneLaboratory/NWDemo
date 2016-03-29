@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dependenciesRoot>
-  <dependency className="model.FastqKallistoCounts" file="FastqKallistoCounts.nf" />
+  <dependency className="model.DownloadFromSRA" file="DownloadFromSRA.nf" />
   <dependency className="model.workflow.config" file="nextflow.config" />
   <dependency className="model.runLocal" file="runLocal.xml" />
+  <dependency className="model.runNextflow" file="runNextflow" />
+  <dependency className="model.runRemote" file="runRemote.xml" />
+  <dependency className="model.setEnv" file="setEnv" />
 </dependenciesRoot>
 

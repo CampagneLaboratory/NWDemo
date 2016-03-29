@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dependenciesRoot>
+  <dependency className="training.Align With Kallisto" file="Align_With_Kallisto.nf" />
+  <dependency className="training.DFABuilders" file="DFABuilders.java">
+    <classNode dependClassName="jetbrains.mps.lang.dataFlow.DataFlowManager" />
+    <classNode extendsClassName="jetbrains.mps.lang.dataFlow.DataFlowBuilders" />
+  </dependency>
+  <dependency className="training.ErrorManagementImplementation" file="ErrorManagementImplementation.java">
+    <classNode dependClassName="java.lang.Exception" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="training.FastqKallistoCounts" file="FastqKallistoCounts.nf" />
+  <dependency className="training.IDKallistoCounts" file="IDKallistoCounts.nf" />
+  <dependency className="training.ListToTupleWrapper" file="ListToTupleWrapper.java">
+    <classNode dependClassName="java.lang.Object" />
+    <classNode dependClassName="java.util.ArrayList" />
+    <classNode dependClassName="jetbrains.mps.baseLanguage.tuples.runtime.MultiTuple" />
+    <classNode dependClassName="jetbrains.mps.baseLanguage.tuples.runtime.Tuples" />
+  </dependency>
+  <dependency className="training.PreprocessReads" file="PreprocessReads.nf" />
+  <dependency className="training.Take_1M_sequences" file="Take_1M_sequences.nf" />
+  <dependency className="training.Take_1M_sequences_Methods" file="Take_1M_sequences_Methods.java">
+    <classNode dependClassName="java.io.File" />
+    <classNode dependClassName="java.lang.System" />
+    <classNode dependClassName="java.util.List" />
+  </dependency>
+  <dependency className="training.workflow.config" file="nextflow.config" />
+  <dependency className="training.runLocal" file="runLocal.xml" />
+  <dependency className="training.runNextflow" file="runNextflow" />
+  <dependency className="training.runRemote" file="runRemote.xml" />
+  <dependency className="training.setEnv" file="setEnv" />
+</dependenciesRoot>
+
